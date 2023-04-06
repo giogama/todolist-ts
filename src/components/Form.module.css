@@ -1,0 +1,55 @@
+.formsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+}
+
+.formsection .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    position: absolute;
+    top: -26px;
+    width: 736px;
+}
+
+.formsection .wrapper > input {
+    width: 39rem;
+    height: 54px;
+    padding: 1rem;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 140%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.formsection .wrapper > input:focus {
+    border: 1px solid var(--purple-dark);
+    outline: 0;
+}
+
+.formsection .wrapper > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 90px;
+    height: 52px;
+    background: var(--blue-dark);
+    border-radius: 8px;
+    color: var(--gray-100);
+    border: 0;
+    outline: 0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.formsection .wrapper > button:hover {
+    background: var(--blue);
+}

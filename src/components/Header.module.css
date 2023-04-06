@@ -4,4 +4,16 @@
     align-items: center;
     height: 200px;
     background: var(--gray-700);
+    color: var(--blue);
+}
+
+.header > strong {    
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 3rem;
+    margin-left: 12px;
+}
+
+.header > strong > span {    
+    color: var(--purple-dark);
 }
