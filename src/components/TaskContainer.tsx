@@ -22,6 +22,7 @@ export const TaskContainer = () => {
         </section>
         <section className={styles.tasks}>
           <TaskItem />
+          <TaskItem completed={true} />
         </section>
     </main>
   )
