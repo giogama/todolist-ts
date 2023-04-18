@@ -7,11 +7,12 @@ Let's create To-Do List using React/Typescript?
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#-libraries">Libraries</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#memo-license">License</a>
 </p>
 
 <p align="center">
-  <img alt="rocketpay" src=".github/project.png" width="100%">
+  <img alt="rocketpay" src=".github/todo.png" width="100%">
 </p>
 
 ## 🚀 Technologies
@@ -31,6 +32,14 @@ This application is a To-Do List with the follwing features:
 - [x] Delete a To-Do List
 - [x] Check as done
 - [x] Validate To-Do List input
+
+## 💻 Libraries
+
+All the libraries this app is using:
+
+- Phosphor-icons
+- uuid
+- React v18
 
 ## :memo: License
 
