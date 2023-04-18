@@ -53,3 +53,8 @@
 .formsection .wrapper > button:hover {
     background: var(--blue);
 }
+
+.formsection .wrapper > button:disabled {
+    background: var(--gray-300);
+    cursor: not-allowed;
+}

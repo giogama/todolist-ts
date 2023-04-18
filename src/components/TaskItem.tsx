@@ -1,19 +1,42 @@
+import { useState } from "react";
+
 import { Trash } from "@phosphor-icons/react";
 import styles from './TaskItem.module.css';
 
 interface IProps {
-    completed?: boolean;
+  id: string;
+  name: string;
+  completed: boolean;
+  onCompletedTask: (id:string) => void;
+  onDeleteTask: (id:string) => void;
 }
 
-export const TaskItem = ({ completed } : IProps) => {
-    const completedClass = completed ? styles.taskCompleted : '';
+
+export const TaskItem = ({ id, completed, name, onCompletedTask, onDeleteTask } : IProps) => {
+    const [isChecked, setIsChecked] = useState(false);    
+
+    const handleOnChange = (e:React.ChangeEvent<HTMLInputElement>) => {    
+      setIsChecked(!isChecked);
+      onCompletedTask(id);
+    }
+
+    const handleDeleteTask = () => {
+      onDeleteTask(id);
+    }
 
   return (
     <div className={styles.container}>
-      <input type='checkbox' />
-      <p className={completedClass}>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
-      <Trash size={24} />
-
+      <input 
+        type='checkbox' 
+        checked={isChecked} 
+        onChange={handleOnChange}
+      />
+      {isChecked 
+        ? <p className={styles.taskCompleted}>{name}</p>
+      :
+        <p>{name}</p>
+       }      
+      <Trash size={24} onClick={handleDeleteTask} />
     </div>
   )
 }
