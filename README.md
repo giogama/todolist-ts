@@ -33,7 +33,7 @@ This application is a To-Do List with the follwing features:
 - [x] Check as done
 - [x] Validate To-Do List input
 
-## 💻 Libraries
+## ⚙️ Libraries
 
 All the libraries this app is using:
 
